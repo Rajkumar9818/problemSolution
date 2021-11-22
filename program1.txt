@@ -1,0 +1,13 @@
+public static int sumOrMultiply(int firstNum,int secondNum ,String operation)
+{
+    if (operation.equals("sum"))
+    {
+       return firstNum+secondNum;   
+    }
+    
+    else if (operation.equals("mul"))
+    {
+       return firstNum*secondNum;
+    }
+      return 0;
+}

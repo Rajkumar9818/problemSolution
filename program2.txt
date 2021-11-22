@@ -1,0 +1,19 @@
+public static List<Integer> twoSmallestNum(int arrayElements[])
+	{
+	    List<Integer> smallestNumber=new ArrayList<Integer>();
+	    if(arrayElements.length>1)
+	    {    
+	    Arrays.sort(arrayElements);
+	    smallestNumber.add(arrayElements[0]);
+	    for(int i=1;i<arrayElements.length;i++)
+	    {
+	        if(arrayElements[i]!=smallestNumber.get(0))
+	       {
+	            smallestNumber.add(arrayElements[i]);
+	            break;
+	       }
+	     }
+	   }
+	  return smallestNumber;  
+	}
+
